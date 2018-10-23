@@ -1,0 +1,29 @@
+<script src="https://unpkg.com/vue@2.5.17"></script>
+<div id="app">
+    <p>{{trainingMenus[0].name}}: {{trainingMenus[0].rep}}</p>
+</div>
+<script>
+    console.assert(typeof Vue !== 'undefined');
+
+    let trainingMenus = [
+        {
+            name: '腹筋',
+            rep: 30,
+        },
+        {
+            name: '背筋',
+            rep: 30,
+        },
+        {
+            name: '腕立て',
+            rep: 20,
+        },
+    ];
+
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            trainingMenus: trainingMenus
+        }
+    })
+</script>
