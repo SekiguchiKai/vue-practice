@@ -1,0 +1,19 @@
+<script src="https://unpkg.com/vue@2.5.17">
+
+</script>
+
+<div id="muscle-training-list">
+    <muscle-training-title></muscle-training-title>
+</div>
+
+<script>
+    new Vue({
+        el: "#muscle-training-list",
+        components: {
+            'muscle-training-title': {
+                template: '<h1>筋トレメニュー</h1>'
+            }
+        }
+    })
+</script>
+
